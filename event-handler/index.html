@@ -16,7 +16,14 @@
     <label for="katalaluan">Enter Password:</label>
     <input type="text" id="katalaluan">
     <br>
+    <a onclick="manageLink()" id="linkSaraBarellies" href="http://" target="_blank" rel="noopener noreferrer"></a>
     
+    <script>
+        function manageLink(){
+            event.preventDefault();
+            alert("Stopped default event!");
+        }
+    </script>
     <script src="js/index.js"></script>
 </body>
 </html>
