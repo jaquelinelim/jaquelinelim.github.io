@@ -12,9 +12,10 @@ function checkPassword(){
     let password_val = elkataLaluan.value;
     if(password_val.length > 5){
         alert("password check....OK!");
+        
     } else {
         alert("Password too short!"); 
-        
+
     }
 }
 let elkataLaluan = document.getElementById("kataLaluan");
