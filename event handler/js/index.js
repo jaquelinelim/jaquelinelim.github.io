@@ -2,7 +2,7 @@ function transformUppercase(_val){
 return _val.toUppercase();
 }
 
-let elNamaPengguna = document.getElementById(namaPengguna); //1) select element
-elNamaPengguna.addEventListener("keyup", function(){
-    elNamaPengguna.value = transformUppercase(elNamaPengguna.value);
+let elnamaPengguna = document.getElementById(namaPengguna); //1) select element
+elnamaPengguna.addEventListener("keyup",function(){
+    elnamaPengguna.value = transformUppercase(elnamaPengguna.value);
 });
