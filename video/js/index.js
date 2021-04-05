@@ -13,5 +13,8 @@ pauseBtn.addEventListener("click", function(){
 
 let freezeBtn = document.getElementById("freezeBtn");
 freezeBtn.addEventListener("mousedown", function(){
-    video.play();
+    video.pause();
 });
+freezeBtn.addEventListener("mouseup", function(){
+    video.play();
+
