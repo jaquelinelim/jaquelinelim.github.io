@@ -10,3 +10,8 @@ let pauseBtn = document.getElementById("pauseBtn");
 pauseBtn.addEventListener("click", function(){
 
 });
+
+let freezeBtn = document.getElementById("freezeBtn");
+freezeBtn.addEventListener("mousedown", function(){
+    video.play();
+});
