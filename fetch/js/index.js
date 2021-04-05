@@ -1,9 +1,9 @@
 let elLoadUser = document.getElementById("getRandomUserBtn");
 elLoadUser.addEventListener("click", function(){
-    elLoadUser();
+    LoadUser();
 });
 
-function elLoadUser(){
+function LoadUser(){
     let url = "https://randomuser.me/api/";
 
     fetch(url)
