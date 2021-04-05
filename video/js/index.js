@@ -25,7 +25,7 @@ seekBar.addEventListener("change", function(){
     video.currentTime = time;
 });
 
-seekBar.addEventListener("timeupdate", function(){
-    let vale = (100 / video.duration) * video.currentTime;
+video.addEventListener("timeupdate", function(){
+    let value = (100 / video.duration) * video.currentTime;
     seekBar.value = value;
 });
