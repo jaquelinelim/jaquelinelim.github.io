@@ -12,12 +12,12 @@ function elLoadUser(){
         let fn = document.getElementById("firstName");
         let ln = document.getElementById("lastName");
         let phone = document.getElementById("phone");
-        let img = document.getElementById("userimg");
+        let img = document.getElementById("userImg");
 
         fn.innerHTML = data.results[0].name.first;
-        ln.innerHTML = date.results[0].name.last;
-        phone.innerHTML = date.results[0].phone;
-        imgsrc = date.results[0].picture.large;
+        ln.innerHTML = data.results[0].name.last;
+        phone.innerHTML = data.results[0].phone;
+        img.src = data.results[0].picture.large;
 
     });
 }
