@@ -20,8 +20,8 @@ elLocate.addEventListener("click",function(){
 
             let distances = findNearest(userLat, userLong);
 
-            eLat.innerHTML = "Your latitude: " + userlat;
-            elLong.innerHTML = "Your longitude: " + userlong;
+            eLat.innerHTML = "Your latitude: " + userLat;
+            elLong.innerHTML = "Your longitude: " + userLong;
             elDePulze.innerHTML = "Distance to De Pulze, Cyberjaya is  " + distances[0] + "km";
             elSunway.innerHTML = "Distance to Sunway Pyramid, Subang Jaya is " + distances[1] + "km";
             elKlcc.innerHTML = "Distance to KLCC, Ampang is " + distances[2] + "km";
