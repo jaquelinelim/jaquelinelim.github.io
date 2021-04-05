@@ -6,7 +6,7 @@ function findNearest(lat,lon){
     return[d1,d2,d3];
 }
 let elLocate = document.getElementById("locate");
-elLocate.addEventListener("click", function(){
+elLocate.addEventListener("click",function(){
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition(function(position){
             let elLat = document.getElementById("lat");
@@ -16,12 +16,12 @@ elLocate.addEventListener("click", function(){
             let elKlcc = document.getElementById("klcc");
 
             let userlat = position.coords.latitude;
-            let userlon = position.coords.longitude;
+            let userlong = position.coords.longitude;
 
             let distances = findNearest(userLat, userLong);
 
-            eLat.innerHTML + "Your latitude: " + userlat;
-            elLong.innerHTML + "Your longitude: " + userlong;
+            eLat.innerHTML = "Your latitude: " + userlat;
+            elLong.innerHTML = "Your longitude: " + userlong;
             elDePulze.innerHTML = "Distance to De Pulze, Cyberjaya is  " + distances[0] + "km";
             elSunway.innerHTML = "Distance to Sunway Pyramid, Subang Jaya is " + distances[1] + "km";
             elKlcc.innerHTML = "Distance to KLCC, Ampang is " + distances[2] + "km";
