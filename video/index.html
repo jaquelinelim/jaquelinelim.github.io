@@ -9,6 +9,20 @@
 <body>
     <h1>HTML5 Video Examples</h1>
 
+    <h2>JS Video Controls</h2>
+    <video id="myVideo" heigth="600" width="600" oster="https://dinbror.dk/blog/wp-content/uploads/2016/08/html5-video-750x400.jpg" preload="none">
+    Your browser does not support the video tag
+    </video>
+    <div id="video-controls">
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="freezeBtn">Freeze</button>
+        <input type="range" id="seekBar" value="0">
+        <label for="volume">Volum</label>
+        <input type="range" id="volume" min="0" max="1" stop="">
+    </div>
+
+
     <h2>Autoplay Muted</h2>
     <video autoplay muted>
         <source src="https://www.w3schools.com/html/movie.mp4" type=""video/mp4">
@@ -51,5 +65,6 @@
         Your browser does not support the video tag
     </video>
 
+    <script src="js/index.js"></script>
 </body>
 </html>
