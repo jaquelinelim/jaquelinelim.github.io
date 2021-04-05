@@ -1,7 +1,7 @@
 let elLoadUser = document.getElementById("getRandomUserBtn");
 elLoadUser.addEventListener("click", function(){
     elLoadUser();
-}):
+});
 
 function elLoadUser(){
     let url = "https://randomuser.me/api/";
@@ -18,7 +18,6 @@ function elLoadUser(){
         ln.innerHTML = date.results[0].name.last;
         phone.innerHTML = date.results[0].phone;
         imgsrc = date.results[0].picture.large;
-
 
     });
 }
