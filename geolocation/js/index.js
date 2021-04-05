@@ -5,7 +5,7 @@ elLocate.addEventListener("click",function(){
             let elLat = document.getElementById("lat");
             let elLong = document.getElementById("long");
             elLat.innerHTML = "Latitude: " + position.coords.latitude;
-            elLong.innerHTML = "Longitude: " + position.coords.logitude;
+            elLong.innerHTML = "Longitude: " + position.coords.longitude;
             
         });
     } else{
