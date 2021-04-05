@@ -15,8 +15,8 @@ elLocate.addEventListener("click",function(){
             let elSunway = document.getElementById("sunway");
             let elKlcc = document.getElementById("klcc");
 
-            let userlat = position.coords.latitude;
-            let userlong = position.coords.longitude;
+            let userLat = position.coords.latitude;
+            let userLong = position.coords.longitude;
 
             let distances = findNearest(userLat, userLong);
 
