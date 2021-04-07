@@ -70,15 +70,15 @@ let app7 = new Vue({
     data: {
         groceryList: [
             {
-                id=0,
+                id:0,
                 desc:"Vegetables"
             },
             {
-                id=1,
+                id:1,
                 desc:"Cheese"
             },
             {
-                id=2,
+                id:2,
                 desc:"Mineral Water"
             }
         ]
