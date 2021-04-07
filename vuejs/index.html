@@ -17,10 +17,14 @@
         <span v-bind:title="Jaqueline">
             Hover your mouse over me for a few seconds to see the title!
         </span>
-        <a href="linkUrl" target="_blank" rel="nonopener noreferrer">
+        <a v-bind:href="linkUrl" target="_blank" rel="nonopener noreferrer">
             {{ linkText }}
-
         </a>
+    </div>
+
+    <div ie="app3">
+        <span v-if="showIt">Now you see this!</span>
+
     </div>
 
     <script src="js/index.js"></script>

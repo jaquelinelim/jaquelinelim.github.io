@@ -15,3 +15,28 @@ let app2 = new Vue({
     }
 
 });
+
+let app3 = new Vue({
+    el:"#app3",
+    data: {
+
+    }
+
+});
+
+let app4 = new Vue({
+    el: "#app4",
+    data: {
+        theList:[
+            {
+                text:"Learn HTML"
+            },
+            {
+                text:"Learn CSS"
+            },
+            {
+                text:"Learn Javascript"
+            }
+        ]
+    }
+});       
