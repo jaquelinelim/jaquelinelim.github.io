@@ -10,8 +10,8 @@ let app2 = new Vue({
     el: "#app2",
     data: {
         message:"Loaded on " + new Date().toLocaleString()
-        linkUrl: "https://bbc.in/2LAnJs8",
-        linkText: "Google is down!"
+        linkUrl:"https://bbc.in/2LAnJs8",
+        linkText:"Google is down!"
     }
 
 });
@@ -40,3 +40,15 @@ let app4 = new Vue({
         ]
     }
 });       
+
+let app5 = new Vue({
+    el: "#app5",
+    data: {
+        msg: "Santino"
+    },
+    method: {
+        reverseMsg: function(){
+            this.msg = this.msg.split("").reverse().join("");
+        }
+    }
+});
