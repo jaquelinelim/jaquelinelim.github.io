@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VueJS Examples</title>
+    <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
 
@@ -12,7 +13,12 @@
         {{ message }}
     </div>
 
-    <script src="https://unpkg.com/vue@next"></script>
+    <div id="app2">
+        <span v-bind: title="Jaqueline">
+            Hover your mouse over me for a few seconds to see the title!
+        </span>
+    </div>
+
     <script src="js/index.js"></script>
 </body>
 </html>
