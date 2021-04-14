@@ -10,6 +10,7 @@ function GetBooking(){
     .then(json => {
 
         let bookingNameList = document.getElementById("bookingNameList");
+        let bookingIds = [];
 
         //clear the table rows
 
