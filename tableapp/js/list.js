@@ -22,7 +22,8 @@ function GetBooking(){
             let gEmail =  json.bookingitems[i].email;
             let gPax =  json.bookingitems[i].pax;
             let gRemarks =  json.bookingitems[i].remarks;
-            let gId =  "delete" + json.bookingitems[i].id;
+            let gId =  json.bookingitems[i].id;
+            let btnId = "delete" + gId;
 
             let row = bookingNameList.insertRow(bookingNameList.rows.length);
             row.insertCell(0).innerHTML = gId;
@@ -30,7 +31,7 @@ function GetBooking(){
             row.insertCell(2).innerHTML = gEmail;
             row.insertCell(3).innerHTML = gPax;
             row.insertCell(4).innerHTML = gRemarks;
-            row.insertCell(5).innerHTML = "<button id='" + gId +"' class='btn btn-danger'>Delete</button>";
+            row.insertCell(5).innerHTML = "<button id='" + btnId +"' class='btn btn-danger'>Delete</button>";
 
         }
     });
