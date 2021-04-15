@@ -24,7 +24,7 @@ function GetOrder(){
             let gName =  json.breakfastmenu[i].name;
             let gEmail =  json.breakfastmenu[i].email;
             let gPax =  json.breakfastmenu[i].pax;
-            let gRemarks =  json.breakfastmenu[i].remarks;
+            let gChoice =  json.breakfastmenu[i].choice;
             let gId =  json.breakfastmenu[i].id;
             let btnId = "delete" + gId;
 
@@ -33,7 +33,7 @@ function GetOrder(){
             row.insertCell(1).innerHTML = gName;
             row.insertCell(2).innerHTML = gEmail;
             row.insertCell(3).innerHTML = gPax;
-            row.insertCell(4).innerHTML = gRemarks;
+            row.insertCell(4).innerHTML = gChoice;
             row.insertCell(5).innerHTML = "<button id='" + btnId +"' class='btn btn-danger'>Delete</button>";
 
             orderIds.push(btnId);
