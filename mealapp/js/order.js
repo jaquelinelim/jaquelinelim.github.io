@@ -1,5 +1,5 @@
-let bookNowBtn = document.getElementById("bookNow");
-bookNowBtn.addEventListener("click",function(){
+let orderNowBtn = document.getElementById("orderNow");
+orderNowBtn.addEventListener("click",function(){
     let userName = document.getElementById("userName");
     let userNameVal = userName.value;
 
@@ -9,13 +9,13 @@ bookNowBtn.addEventListener("click",function(){
     let userPaxVal = document.getElementById("userPax").value;
     let userRemarksVal = document.getElementById("userRemarks").value;
 
-    BookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal);
+    OrderNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal);
 });
 
-function BookNow(userName, userEmail, userPax, userRemarks){
+function OrderNow(userName, userEmail, userPax, userRemarks){
     let url = 'https://api.sheety.co/0b37e6178bdecca5bed71fee1cb7e07a/mealapp/breakfastmenu';
     let body = {
-      bookingitem: {
+      orderitem: {
           name: userName,
           email: userEmail,
           pax: userPax,
@@ -31,7 +31,7 @@ function BookNow(userName, userEmail, userPax, userRemarks){
     })
     .then((response) => response.json())
     .then(json => {
-        alert("ID: " + json.bookingitem.id + "," + json.bookingitem.name + " successfully added!");
+        alert("ID: " + json.orderitem.id + "," + json.orderitem.name + " successfully added!");
     });
 
 }
