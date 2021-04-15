@@ -4,7 +4,7 @@ refreshNowBtn.addEventListener("click",function(){
 });
 
 function GetOrder(){
-    let url = 'https://api.sheety.co/0b37e6178bdecca5bed71fee1cb7e07a/tableapp/bookingitems';
+    let url = 'https://api.sheety.co/0b37e6178bdecca5bed71fee1cb7e07a/mealapp/breakfastmenu';
     fetch(url)
     .then((response) => response.json())
     .then(json => {
