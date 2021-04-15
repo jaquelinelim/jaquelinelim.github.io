@@ -19,7 +19,7 @@ function OrderNow(userName, userEmail, userPax, userChoice){
           name: userName,
           email: userEmail,
           pax: userPax,
-          choice: userchoice
+          choice: userChoice
       }
     }
     fetch(url, {
