@@ -7,9 +7,9 @@ orderNowBtn.addEventListener("click",function(){
     let userEmailVal = userEmail.value;
 
     let userPaxVal = document.getElementById("userPax").value;
-    let userRemarksVal = document.getElementById("userRemarks").value;
+    let userChoiceVal = document.getElementById("userChoice").value;
 
-    OrderNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal);
+    OrderNow(userNameVal, userEmailVal, userPaxVal, userChoiceVal);
 });
 
 function OrderNow(userName, userEmail, userPax, userRemarks){
@@ -19,7 +19,7 @@ function OrderNow(userName, userEmail, userPax, userRemarks){
           name: userName,
           email: userEmail,
           pax: userPax,
-          remarks: userRemarks
+          choice: userchoice
       }
     }
     fetch(url, {
