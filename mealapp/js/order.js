@@ -12,7 +12,7 @@ orderNowBtn.addEventListener("click",function(){
     OrderNow(userNameVal, userEmailVal, userPaxVal, userChoiceVal);
 });
 
-function OrderNow(userName, userEmail, userPax, userRemarks){
+function OrderNow(userName, userEmail, userPax, userChoice){
     let url = 'https://api.sheety.co/0b37e6178bdecca5bed71fee1cb7e07a/mealapp/breakfastmenu';
     let body = {
       orderitem: {
