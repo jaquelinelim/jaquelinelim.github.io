@@ -51,7 +51,7 @@ function GetOrder(){
 }
 
 function DeleteOrder(id) {
-    let url = 'https://api.sheety.co/0b37e6178bdecca5bed71fee1cb7e07a/mealapp/breakfastmenu' + id;
+    let url = 'https://api.sheety.co/0b37e6178bdecca5bed71fee1cb7e07a/mealapp/breakfastmenu/' + id;
 fetch(url, {
   method: 'DELETE',
 })
