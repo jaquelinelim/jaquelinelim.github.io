@@ -19,12 +19,12 @@ function GetBooking(){
 
         }
 
-        for(let i = 0; i < json.bookingitems.length; i++){
-            let gName =  json.bookingitems[i].name;
-            let gEmail =  json.bookingitems[i].email;
-            let gPax =  json.bookingitems[i].pax;
-            let gRemarks =  json.bookingitems[i].remarks;
-            let gId =  json.bookingitems[i].id;
+        for(let i = 0; i < json.breakfastmenu.length; i++){
+            let gName =  json.breakfastmenu[i].name;
+            let gEmail =  json.breakfastmenu[i].email;
+            let gPax =  json.breakfastmenu[i].pax;
+            let gRemarks =  json.breakfastmenu[i].remarks;
+            let gId =  json.breakfastmenu[i].id;
             let btnId = "delete" + gId;
 
             let row = bookingNameList.insertRow(bookingNameList.rows.length);
