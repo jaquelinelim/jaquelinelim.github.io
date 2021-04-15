@@ -4,6 +4,7 @@ refreshNowBtn.addEventListener("click",function(){
 });
 
 function GetBooking(){
+    
     let url = 'https://api.sheety.co/0b37e6178bdecca5bed71fee1cb7e07a/mealapp/breakfastmenu';
     fetch(url)
     .then((response) => response.json())
@@ -12,6 +13,7 @@ function GetBooking(){
         let bookingNameList = document.getElementById("bookingNameList");
         let bookingIds = [];
 
+        
         //clear the table rows
 
         for (let k = bookingNameList.rows.length - 1; k > 0; k--){
@@ -50,7 +52,7 @@ function GetBooking(){
 }
 
 function DeleteBooking(id) {
-    let url = 'https://api.sheety.co/0b37e6178bdecca5bed71fee1cb7e07a/tableapp/bookingitems/' + id;
+    let url = 'https://api.sheety.co/0b37e6178bdecca5bed71fee1cb7e07a/mealapp/breakfastmenu/2' + id;
 fetch(url, {
   method: 'DELETE',
 })
