@@ -15,8 +15,7 @@ function GetOrder(){
 
         
  
-
-        for (let k = orderNameList.rows.length - 1; k > 0; k--){
+        for(let k = orderNameList.rows.length - 1; k > 0; k--){
             orderNameList.deleteRow(k);
 
         }
