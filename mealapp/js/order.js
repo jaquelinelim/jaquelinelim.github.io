@@ -15,7 +15,7 @@ orderNowBtn.addEventListener("click",function(){
 function OrderNow(userName, userEmail, userPax, userChoice){
     let url = 'https://api.sheety.co/0b37e6178bdecca5bed71fee1cb7e07a/mealapp/breakfastmenu';
     let body = {
-      orderitem: {
+      breakfastmenu: {
           name: userName,
           email: userEmail,
           pax: userPax,
@@ -31,7 +31,7 @@ function OrderNow(userName, userEmail, userPax, userChoice){
     })
     .then((response) => response.json())
     .then(json => {
-        alert("ID: " + json.orderitem.id + "," + json.orderitem.name + " successfully added!");
+        alert("ID: " + json.breakfastmenu.id + "," + json.breakfastmenu.name + " successfully added!");
     });
 
 }
